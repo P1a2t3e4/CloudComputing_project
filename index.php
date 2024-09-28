@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Course Management</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>Welcome to Student Course Management</h1>
-        <p>Manage your courses easily!</p>
+        <p>Manage your courses easily and effectively!</p>
         <a href="register.php" class="btn">Register</a>
         <a href="login.php" class="btn">Login</a>
     </div>

@@ -1,21 +1,34 @@
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif; 
+    background-image: url('background.jpg'); 
+    background-size: cover;
+    background-position: center;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 .container {
     max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 h1, h2 {
     text-align: center;
+    color: #007BFF; 
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
 }
 
 form {
@@ -25,24 +38,40 @@ form {
 
 label {
     margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1em;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
 }
 
 button {
-    padding: 10px;
+    padding: 12px;
     background-color: #007BFF;
     color: white;
+    font-size: 1.1em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); 
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -50,16 +79,20 @@ button:hover {
 }
 
 a {
-    text-decoration: none;
     color: #007BFF;
-    display: inline-block;
+    font-size: 1.1em;
+    display: block;
+    text-align: center;
     margin-top: 15px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 a:hover {
     color: #0056b3;
 }
 
+/* List Styles */
 ul {
     list-style-type: none;
     padding: 0;
@@ -67,11 +100,23 @@ ul {
 
 ul li {
     background-color: #f9f9f9;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+ul li strong {
+    font-size: 1.2em;
+    color: #007BFF;
+}
+
+ul li p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Button inside list */
 ul li form {
     display: inline;
 }
@@ -79,14 +124,16 @@ ul li form {
 .btn {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #007BFF;
+    background-color: #28a745; 
     color: white;
     text-align: center;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+    transition: background-color 0.3s ease;
+    font-size: 1em;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #218838;
 }
